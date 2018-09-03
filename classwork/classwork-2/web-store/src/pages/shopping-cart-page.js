@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 
 export class ShoppingCart extends Component {
+    constructor (props) {
+        super();
+        this.state = props.state;
+    }
+
     render() {
         return (
             <div className="container">
@@ -8,27 +13,9 @@ export class ShoppingCart extends Component {
                     <div className="col-8">
                         <h1>Shopping Cart</h1>
                         <ul className="list-group">
-                            <li className="list-group-item">
-                                <img src="#" alt=""/>
-                                <a href="#" className="admin-orders__link">
-                                    MacBook Pro 2018
-                                </a>
-                                <h2 className="float-right badge-light">✓</h2>
-                            </li>
-                            <li className="list-group-item">
-                                <img src="#" alt=""/>
-                                <a href="#" className="admin-orders__link">
-                                    Dell xs
-                                </a>
-                                <h2 className="float-right badge-light">✓</h2>
-                            </li>
-                            <li className="list-group-item">
-                                <img src="#" alt=""/>
-                                <a href="#" className="admin-orders__link">
-                                    Microsoft Surface
-                                </a>
-                                <h2 className="float-right badge-light">✓</h2>
-                            </li>
+                            {this.state.goodsToCart.map(good => {
+                                return this.renderListItemGroup(good);
+                            })}
                         </ul>
                     </div>
                     <div className="col-4">
@@ -48,6 +35,19 @@ export class ShoppingCart extends Component {
 
         );
     }
+
+    renderListItemGroup(item) {
+        return (
+            <li className="list-group-item">
+                <img src="#" alt=""/>
+                <a href="#" className="admin-orders__link">
+                    {item.name}
+                </a>
+                <h2 className="float-right badge-light">✓</h2>
+            </li>
+        )
+    }
+
 }
 
 

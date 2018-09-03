@@ -12,13 +12,15 @@ class App extends Component {
         super();
 
         this.state = {
-           activePage: 'home-page',
+            activePage: 'home-page',
+            goods: [{name: 'MacBook pro 2018'}, {name: 'Dell xs'}, {name: 'Microsoft Surface'}],
+            goodsToCart: []
         }
     }
 
     changeActivePageToAdminPage = () => {
         this.setState({
-            activePage: 'admin-page'
+            activePage: 'admin-page',
         })
     };
 
@@ -43,15 +45,24 @@ class App extends Component {
         }
 
         if (this.state.activePage === 'admin-page') {
-            return <Admin changeActivepage ={this.changeActivePage}/>
+            return <Admin
+                state = {this.state}
+                changeActivePageToUserPage = {this.changeActivePageToUserPage}
+                changeActivePageToShoppingCart = {this.changeActivePageToShoppingCart}
+            />
         }
 
         if (this.state.activePage === 'user-page') {
-            return <UserPage changeActivepage ={this.changeActivePage}/>
+            return <UserPage
+                state = {this.state}
+                changeActivePageToShoppingCart = {this.changeActivePageToShoppingCart}
+            />
         }
 
         if (this.state.activePage === 'shopping-cart') {
-            return <ShoppingCart changeActivepage ={this.changeActivePage}/>
+            return <ShoppingCart
+                state = {this.state}
+            />
         }
     }
 }
