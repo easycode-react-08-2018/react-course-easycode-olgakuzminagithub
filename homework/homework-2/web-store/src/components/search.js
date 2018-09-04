@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import YTSearch from 'youtube-api-search';
 
 export class Search extends Component {
     constructor (props) {
@@ -17,16 +16,10 @@ export class Search extends Component {
     searchByWord = (e) => {
         const word = e.target.value;
 
-        const API_KEY = `AIzaSyC1ORL6Y3zxvLLev6QHUqP8eF1hFbYo1WI`;
-
-        YTSearch({ key: API_KEY, term: word}, data => {
-            this.setState({
-                searchWord: word,
-                mainVideo: data[0],
-                listVideo: data
-            });
-
+        this.setState({
+            searchWord: word,
         });
+
 
         console.log(this.state.mainVideo.id.videoId);
     }
