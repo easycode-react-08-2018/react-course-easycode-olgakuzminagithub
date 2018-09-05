@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="03dd183b-5d02-44ec-b7ef-bf07edfb6919" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/homework/homework-2/web-store/src/App.js" afterPath="$PROJECT_DIR$/homework/homework-2/web-store/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/homework/homework-2/web-store/src/components/list-video.js" afterPath="$PROJECT_DIR$/homework/homework-2/web-store/src/components/list-video.js" />
-      <change beforePath="$PROJECT_DIR$/homework/homework-2/web-store/src/components/main-video.js" afterPath="$PROJECT_DIR$/homework/homework-2/web-store/src/components/main-video.js" />
-      <change beforePath="$PROJECT_DIR$/homework/homework-2/web-store/src/components/search.js" afterPath="$PROJECT_DIR$/homework/homework-2/web-store/src/components/search.js" />
-      <change beforePath="$PROJECT_DIR$/homework/homework-2/web-store/src/index.js" afterPath="$PROJECT_DIR$/homework/homework-2/web-store/src/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -178,23 +173,6 @@
               <item name="homework-2" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="web-store" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="react-course-easycode-olgakuzminagithub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-course-easycode-olgakuzminagithub" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="homework" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="homework-2" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web-store" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="react-course-easycode-olgakuzminagithub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-course-easycode-olgakuzminagithub" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="homework" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="homework-2" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web-store" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -253,7 +231,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51736000" />
+    <option name="totallyTimeSpent" value="52023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="115" y="171" width="1486" height="773" extended-state="0" />
