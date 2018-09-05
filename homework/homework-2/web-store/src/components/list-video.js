@@ -2,44 +2,34 @@ import React, {Component} from 'react';
 
 export class ListVideo extends Component {
     render() {
+        const {
+            state,
+            changeMainVideoOnClicked
+        } = this.props;
+
         return (
             <ul className="col-md-4 list-group">
-                <li className="list-group-item">
-                    <div className="video-list media">
-                        <div className="video-list media">
-                            <div className="media-left">
-                                <img className="media-object" src="https://randomuser.me/api/portraits/thumb/men/7.jpg" />
+                {state.listVideo.map((video, index) => {
+                    if (index === 0) {
+                        return
+                    }
+                    const src = 'https://www.youtube.com/embed/' + video.id.videoId;
+                    const title = video.snippet.title;
+                    return (
+                        <li className="list-group-item" onClick={(e) => changeMainVideoOnClicked(index)}>
+                            <div className="video-list media flex-wrap">
+                                <div className="video-list media">
+                                    <div className="media-left">
+                                        <iframe title="random" src ={src}/>
+                                    </div>
+                                </div>
+                                <div className="media-body">
+                                    <div className="media-heading">{title}</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="media-body">
-                            <div className="media-heading">SOME VIDEO</div>
-                        </div>
-                    </div>
-                </li>
-                <li className="list-group-item">
-                    <div className="video-list media">
-                        <div className="video-list media">
-                            <div className="media-left">
-                                <img className="media-object" src="https://randomuser.me/api/portraits/thumb/men/7.jpg" />
-                            </div>
-                        </div>
-                        <div className="media-body">
-                            <div className="media-heading">SOME VIDEO</div>
-                        </div>
-                    </div>
-                </li>
-                <li className="list-group-item">
-                    <div className="video-list media">
-                        <div className="video-list media">
-                            <div className="media-left">
-                                <img className="media-object" src="https://randomuser.me/api/portraits/thumb/men/7.jpg" />
-                            </div>
-                        </div>
-                        <div className="media-body">
-                            <div className="media-heading">SOME VIDEO</div>
-                        </div>
-                    </div>
-                </li>
+                        </li>
+                    )
+                })}
             </ul>
         )
     }
