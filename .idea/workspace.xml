@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03dd183b-5d02-44ec-b7ef-bf07edfb6919" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/package-lock.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/public/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/public/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/public/manifest.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/src/App.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/src/App.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/src/App.test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/src/index.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/src/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/src/logo.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/src/registerServiceWorker.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -235,7 +221,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72297000" />
+    <option name="totallyTimeSpent" value="72401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="369" y="108" width="1277" height="832" extended-state="0" />
