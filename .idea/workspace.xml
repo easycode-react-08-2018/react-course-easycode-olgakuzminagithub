@@ -2,6 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03dd183b-5d02-44ec-b7ef-bf07edfb6919" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/package-lock.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/public/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/public/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/public/manifest.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/src/App.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/src/App.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/src/App.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/src/index.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/src/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/src/logo.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cookbook/my-app/src/registerServiceWorker.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,7 +26,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cookbook/my-app/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="127" column="24" lean-forward="false" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cookbook/my-app/src/App.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="469">
+              <caret line="327" column="21" lean-forward="false" selection-start-line="327" selection-start-column="21" selection-end-line="327" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -21,6 +58,11 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>border</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,6 +100,8 @@
         <option value="$PROJECT_DIR$/classwork/classwork-4/web-store/src/components/some-component.js" />
         <option value="$PROJECT_DIR$/classwork/classwork-4/web-store/src/components/with-counter.js" />
         <option value="$PROJECT_DIR$/classwork/classwork-4/web-store/src/App.js" />
+        <option value="$PROJECT_DIR$/cookbook/my-app/src/App.js" />
+        <option value="$PROJECT_DIR$/cookbook/my-app/src/App.css" />
       </list>
     </option>
   </component>
@@ -77,6 +121,7 @@
     <handled-path value="$PROJECT_DIR$/classwork/classwork-1/node_modules" />
     <handled-path value="$PROJECT_DIR$/classwork/classwork-2/web-store/node_modules" />
     <handled-path value="$PROJECT_DIR$/classwork/classwork-3/git-hub/node_modules" />
+    <handled-path value="$PROJECT_DIR$/cookbook/my-app/node_modules" />
     <handled-path value="$PROJECT_DIR$/homework/homework-1/node_modules" />
     <handled-path value="$PROJECT_DIR$/homework/homework-2/web-store/node_modules" />
   </component>
@@ -116,31 +161,20 @@
             <path>
               <item name="react-course-easycode-olgakuzminagithub" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-course-easycode-olgakuzminagithub" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="classwork" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cookbook" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="react-course-easycode-olgakuzminagithub" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-course-easycode-olgakuzminagithub" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="classwork" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="classwork-4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cookbook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="my-app" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="react-course-easycode-olgakuzminagithub" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-course-easycode-olgakuzminagithub" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="classwork" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="classwork-4" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web-store" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="react-course-easycode-olgakuzminagithub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-course-easycode-olgakuzminagithub" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="homework" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="react-course-easycode-olgakuzminagithub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-course-easycode-olgakuzminagithub" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="homework" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="homework-3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cookbook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="my-app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -201,7 +235,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59486000" />
+    <option name="totallyTimeSpent" value="72297000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="369" y="108" width="1277" height="832" extended-state="0" />
@@ -268,14 +302,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/classwork/classwork-2/web-store/src/pages/shopping-cart-page.js" />
-    <entry file="file://$PROJECT_DIR$/classwork/classwork-1/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classwork/classwork-2/web-store/src/pages/admin-page.js" />
     <entry file="file://$PROJECT_DIR$/classwork/classwork-2/web-store/src/App.js" />
     <entry file="file://$PROJECT_DIR$/classwork/classwork-2/web-store/src/pages/user-page.js" />
@@ -406,6 +432,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cookbook/my-app/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="127" column="24" lean-forward="false" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cookbook/my-app/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="327" column="21" lean-forward="false" selection-start-line="327" selection-start-column="21" selection-end-line="327" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
