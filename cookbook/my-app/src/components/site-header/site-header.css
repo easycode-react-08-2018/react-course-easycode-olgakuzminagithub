@@ -1,0 +1,44 @@
+.Site-header {
+    width: 100%;
+    min-height: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid dimgrey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.Site-header .User-login {
+    font-size: 28px;
+    color: dimgrey;
+}
+
+.Site-header .Right-part {
+    display: flex;
+    align-items: center;
+}
+.Site-header .Right-part .Sing-out {
+    font-size: 28px;
+    color: deepskyblue;
+    text-decoration: underline;
+}
+.Site-header .Right-part .Logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.Site-header .Right-part .Logo p {
+    display: block;
+    font-size: 28px;
+    color: dimgrey;
+    margin-left: 10px;
+}
+.Site-header .Right-part .Logo img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}

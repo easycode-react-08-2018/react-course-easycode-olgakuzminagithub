@@ -1,0 +1,63 @@
+.Sign-in {
+    width: 70%;
+    margin: auto;
+    border: 2px solid dimgrey;
+    border-radius: 5px;
+    padding: 20px 3px;
+    margin-bottom: 40px;
+}
+
+.Sign-in span {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Sign-in form {
+    width: 50%;
+    margin: auto;
+}
+
+.Sign-in form div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.Sign-in form label {
+    display: block;
+    width: 30%;
+    font-size: 20px;
+    margin-right: 5%;
+}
+
+.Sign-in form input {
+    width: 65%;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.Sign-in .Signin-button {
+    padding-left: 35%;
+    box-sizing: border-box;
+}
+
+
+.Sign-in .Signin-button button {
+    height: 30px;
+    padding: 0 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.Sign-in .Signin-button input {
+    width: initial;
+
+}
+
+.Sign-in .Signin-button p {
+    font-size: 12px;
+}

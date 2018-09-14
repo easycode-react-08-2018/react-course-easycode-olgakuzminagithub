@@ -1,0 +1,111 @@
+.Recipe-block {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid deepskyblue;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.Recipe-block .Left-part {
+    width: 25%;
+}
+
+.Recipe-block .Left-part .Photo-recipe{
+    padding: 20px;
+}
+
+.Recipe-block .Left-part .Photo-recipe img{
+    width: 100%;
+    height: auto;
+}
+
+.Recipe-block .Left-part .Photo-control {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.Recipe-block .Left-part .Photo-control button {
+    width: 40%;
+    border: 1px solid dimgrey;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.Recipe-block .Right-part {
+    width: 75%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid deepskyblue;
+    border-radius: 5px;
+}
+
+.Recipe-block .Right-part h1 {
+    font-size: 30px;
+    padding-left: 180px;
+    box-sizing: border-box;
+}
+
+.Recipe-block .Right-part .Name {
+    display: flex;
+    align-items: center;
+    padding-left: 90px;
+    box-sizing: border-box;
+}
+
+.Recipe-block .Right-part .Name p {
+    margin-right: 20px;
+}
+
+.Recipe-block .Right-part .Name input {
+    width: 180px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    height: 30px;
+    font-size: 16px;
+}
+
+.Recipe-block .Right-part .List-ingredients {
+    display: flex;
+}
+
+.Recipe-block .Right-part .List-ingredients p {
+    margin-right: 18px;
+}
+
+.Recipe-block .Right-part .List-ingredients table {
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 180px;
+}
+.Recipe-block .Right-part .List-ingredients table tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.Recipe-block .Right-part .List-ingredients table tr p{
+    margin: 0;
+}
+
+.Recipe-block .Right-part .List-ingredients table tr span{
+    color: white;
+    background-color: grey;
+    border-radius: 50%;
+    padding: 0 5px;
+
+}
+
+.Recipe-block .Right-part .List-ingredients .Arrow {
+    padding: 0 10px;
+}
+
+.Recipe-block .Right-part .List-ingredients .Arrow span {
+    display: block;
+    border: 1px solid grey;
+    padding: 0 2px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
