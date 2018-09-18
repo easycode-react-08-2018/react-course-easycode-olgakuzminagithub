@@ -1,6 +1,7 @@
 .Receipts {
     width: 100%;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .Receipts .Search-panel {
@@ -31,11 +32,14 @@
     border-radius: 5px;
 }
 
-.Receipts .Search-panel button{
+.Receipts .Search-panel .Add-recipe{
     width: 20%;
-    height: 30px;
+    line-height: 30px;
     font-size: 16px;
     border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid grey;
+    text-align: center;
 }
 
 .Receipts .Receipts-list {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './recipe.css';
+import './recipe-card.css';
 
-export class Recipe extends Component {
+export class RecipeCard extends Component {
     render() {
         const standartRecipePhoto = "https://www.shareicon.net/data/512x512/2016/08/18/812986_pie_512x512.png";
         return (
@@ -40,7 +40,11 @@ export class Recipe extends Component {
                     </div>
 
                 </div>
+                <div className="Button-box">
+                    <button>Обновить</button>
+                </div>
             </div>
+
         )
     }
 }

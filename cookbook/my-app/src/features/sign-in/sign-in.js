@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import './sign-in.css';
 
 const url = 'https://flatearth-api.herokuapp.com/api/v1/auth';
@@ -76,8 +77,8 @@ export class SignIn extends Component {
                             name="password"
                         />
                     </div>
-                    <div className="Signin-button">
-                        <button onClick={(e) => this.login(e)}>Sign In</button>
+                    <div className="Signin-box">
+                        <Link className ='Signin-button' to='/recipes'>Sign In</Link>
                         <input type="checkbox"></input>
                         <p>Remember me</p>
                     </div>

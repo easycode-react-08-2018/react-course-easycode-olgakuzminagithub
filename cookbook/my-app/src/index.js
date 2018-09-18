@@ -1,23 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import {createStore} from 'redux';
 import {Provider} from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
-
-
-import './index.css';
+import {store} from './store/store';
 import {App} from './App';
+import './index.css';
 
-const reducer = (state, action) => {
 
-};
 
-const store = createStore(reducer);
 
 ReactDOM.render(
     <Provider store={store}>
-        <App/>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </Provider>,
     document.getElementById('root'),
 );

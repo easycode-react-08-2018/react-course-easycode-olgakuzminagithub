@@ -5,6 +5,7 @@
     border: 2px solid deepskyblue;
     border-radius: 5px;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 40px;
 }
 
@@ -108,4 +109,10 @@
     padding: 0 2px;
     border-radius: 5px;
     margin: 5px 0;
+}
+
+.Recipe-block .Button-box {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
 }
