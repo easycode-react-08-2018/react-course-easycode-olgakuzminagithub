@@ -1,26 +1,56 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom'
-import logo from './logo.svg';
+import { Router, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
+
 import './App.css';
 
+import { history } from './helpers/history';
 import {Header} from "./features/site-header/site-header";
+import { alertActions } from './store/action/login-actions/alert.actions';
+import { PrivateRoute } from './components/PrivateRouter';
 import {RecipeCard} from "./features/recipe-card/recipe-card";
-import {SignIn} from "./features/sign-in/sign-in";
 import {Recipes} from "./features/recipes/recipes";
 
-export class App extends Component {
+import { HomePage } from './features/login/HomePage';
+import { LoginPage } from './features/login/LoginPage';
+
+export class AppComponents extends Component {
+
+  constructor(props) {
+    super(props);
+    const { dispatch } = this.props;
+      history.listen((location, action) => {
+      // clear alert on location change
+      dispatch(alertActions.clear());
+      });
+   }
+
   render() {
+    const { alert } = this.props;
+
     return (
       <div className="Container">
-          <Header/>
-          <main>
-              <Switch>
-                  <Route exact path='/' component={SignIn}/>
-                  <Route path='/recipes' component={Recipes}/>
-                  <Route path='/recipe-card' component={RecipeCard}/>
-              </Switch>
-          </main>
+          {alert.message &&
+          <div className={`alert ${alert.type}`}>{alert.message}</div>
+          }
+          <Router history={history}>
+              <div>
+                  <Header/>
+                  <PrivateRoute exact path="/" component={Recipes} />
+                  <Route path="/login" component={LoginPage} />
+              </div>
+          </Router>
       </div>
     )
   }
 }
+
+function mapStateToProps(state) {
+    const { alert } = state;
+    return {
+        alert
+    };
+}
+
+export const App = connect(mapStateToProps)(AppComponents);
+

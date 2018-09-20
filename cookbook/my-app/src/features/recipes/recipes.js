@@ -4,12 +4,18 @@ import { Link } from 'react-router-dom'
 
 import './recipes.css';
 
-
+import { userActions } from '../../store/action/login-actions/user.actions';
 import {RecipeComponent} from "./components/recipe";
 
 export class RecipesComponent extends Component {
+
+    componentDidMount() {
+        this.props.dispatch(userActions.getAll());
+    }
+
     render() {
         const {
+            user,
             recipes,
             ingredients
         } = this.props;
@@ -34,9 +40,12 @@ export class RecipesComponent extends Component {
 }
 
 const mapStateToProps = (state) => {
+    const {  recipes, ingredients, authentication } = state;
+    const { user } = authentication;
     return {
-        recipes: state.recipes,
-        ingredients: state.ingredients
+        user,
+        recipes,
+        ingredients,
     };
 };
 

@@ -40,26 +40,12 @@
     border-radius: 5px;
 }
 
-.Sign-in .Signin-box {
-    padding-left: 35%;
-    box-sizing: border-box;
-}
-
-
-.Sign-in .Signin-box .Signin-button {
+.Sign-in form button {
     line-height: 30px;
     padding: 0 10px;
     font-size: 16px;
     border-radius: 5px;
     text-decoration: none;
     border: 1px solid grey;
-}
-
-.Sign-in .Signin-box input {
-    width: initial;
-
-}
-
-.Sign-in .Signin-box p {
-    font-size: 12px;
+    margin: auto;
 }
