@@ -85,6 +85,11 @@
     display: flex;
     justify-content: space-between;
     padding: 3px;
+    border-bottom: 1px solid #000;
+}
+
+.Recipe-block .Right-part .List-ingredients table tr:last-child {
+    border-bottom: none;
 }
 
 .Recipe-block .Right-part .List-ingredients table tr p{
