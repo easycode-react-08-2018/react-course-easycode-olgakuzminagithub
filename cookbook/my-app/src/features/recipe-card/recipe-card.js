@@ -1,9 +1,28 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 import './recipe-card.css';
 
-export class RecipeCard extends Component {
+export class RecipeCardComponent extends Component {
     render() {
         const standartRecipePhoto = "https://www.shareicon.net/data/512x512/2016/08/18/812986_pie_512x512.png";
+
+        const id = this.props.match.params.id;
+
+        const {
+            recipes,
+            allIngredients
+        } = this.props;
+
+
+        const recipeForEdit = recipes.map( recipe => {
+            if (recipe.id === id) {
+                return recipe
+            }
+        });
+
+        console.log('нужный рецепт', recipeForEdit)
+
+
         return (
             <div className="Recipe-block">
                 <div className="Left-part">
@@ -48,3 +67,14 @@ export class RecipeCard extends Component {
         )
     }
 }
+
+
+const mapStateToProps = (state) => {
+    const {  recipes, allIngredients } = state;
+    return {
+        recipes,
+        allIngredients,
+    };
+};
+
+export const RecipeCard = connect(mapStateToProps)(RecipeCardComponent);

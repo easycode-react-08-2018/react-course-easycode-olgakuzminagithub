@@ -8,7 +8,7 @@ import {users} from "./login/users.reducer";
 
 export const rootReducer = combineReducers({
     recipes: recipesReducer,
-    ingredients: ingredientsReducer,
+    allIngredients: ingredientsReducer,
     alert: alert,
     authentication: authentication,
     users: users

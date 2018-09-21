@@ -17,7 +17,7 @@ export class RecipesComponent extends Component {
         const {
             user,
             recipes,
-            ingredients
+            allIngredients
         } = this.props;
 
         return (
@@ -31,7 +31,7 @@ export class RecipesComponent extends Component {
                 </div>
                 <div className="Receipts-list">
                     {recipes.map(recipe => {
-                        return  <RecipeComponent recipe={recipe} ingredients={ingredients} />
+                        return  <RecipeComponent recipe={recipe} allIngredients={allIngredients} />
                     })}
                 </div>
             </div>
@@ -40,12 +40,12 @@ export class RecipesComponent extends Component {
 }
 
 const mapStateToProps = (state) => {
-    const {  recipes, ingredients, authentication } = state;
+    const {  recipes, allIngredients, authentication } = state;
     const { user } = authentication;
     return {
         user,
         recipes,
-        ingredients,
+        allIngredients,
     };
 };
 

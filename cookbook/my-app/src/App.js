@@ -5,14 +5,16 @@ import { connect } from 'react-redux';
 import './App.css';
 
 import { history } from './helpers/history';
-import {Header} from "./features/site-header/site-header";
+
+
+import { Header } from "./features/site-header/site-header";
+import { LoginPage } from './features/login/LoginPage';
+import { Recipes } from "./features/recipes/recipes";
+import { RecipeCard } from "./features/recipe-card/recipe-card";
+
+
 import { alertActions } from './store/action/login-actions/alert.actions';
 import { PrivateRoute } from './components/PrivateRouter';
-import {RecipeCard} from "./features/recipe-card/recipe-card";
-import {Recipes} from "./features/recipes/recipes";
-
-import { HomePage } from './features/login/HomePage';
-import { LoginPage } from './features/login/LoginPage';
 
 export class AppComponents extends Component {
 
@@ -38,6 +40,7 @@ export class AppComponents extends Component {
                   <Header/>
                   <PrivateRoute exact path="/" component={Recipes} />
                   <Route path="/login" component={LoginPage} />
+                  <Route path="/recipe-card/:id" component={RecipeCard} exact/>
               </div>
           </Router>
       </div>

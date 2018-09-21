@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom'
 
 export class RecipeComponent extends Component {
     render() {
-        console.log(this.props);
         const standartRecipePhoto = "https://www.shareicon.net/data/512x512/2016/08/18/812986_pie_512x512.png";
         const {
             recipe,
-            ingredients
+            allIngredients
         } = this.props;
+
 
         return (
             <div className="Receipt">
@@ -23,7 +23,11 @@ export class RecipeComponent extends Component {
                         {recipe.ingredients.map((ingredient, index) => {
                                 return (
                                     <p>
-                                        {index + 1} {ingredient}
+                                        {index + 1} {allIngredients.map(elem => {
+                                            if (ingredient === elem.id) {
+                                                return elem.name
+                                            }
+                                        })}
                                     </p>
                                 )
                             }
@@ -35,7 +39,7 @@ export class RecipeComponent extends Component {
                         <p>Всего ингридиентов <span>{recipe.ingredients.length}</span></p>
                     </div>
                     <div className="Control-receipt">
-                        <Link to = '/recipe-card'>Редактировать</Link>
+                        <Link to = {`/recipe-card/${recipe.id}`} exact>Редактировать</Link>
                         <button>Удалить</button>
                     </div>
                 </div>
